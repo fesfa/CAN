@@ -7,4 +7,5 @@ Our model is trained on 4× GTX-2080Ti GPUs. The system is window10. The python 
 ```
 pip install -r requirments.txt
 ```
-
+### Parameters
+All parameters can be found in `parameters.txt`
