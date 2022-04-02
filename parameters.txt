@@ -1,0 +1,8 @@
+# apy
+python train.py --dataset APY --syn_num 500 --attSize 64 --nz 0 --nclass_all 32 --nclass_seen 20 --k 30 --gpu 0 --nepoch 100 --test_epoch 1 --cr 1 --temp 0.06 --reg 20 --syn_t 0
+# awa1 
+python train.py --dataset AWA1 --syn_num 600 --attSize 85 --nz 3 --nclass_all 50 --nclass_seen 40 --gpu 0 --k 147 --begin_step 50 --test_epoch 1 --cr 10 --temp 0.06 --reg 20 --lr 0.0002  --nepoch 400 --syn_t 12
+# cub
+python train.py --dataset CUB --syn_num 200  --attSize 1024 --class_embedding sent  --nz 5 --nclass_all 200 --nclass_seen 150 --lr 0.0005 --use_classify True --batch_size 2048 --temp 0.07 --nepoch 1000 --test_epoch 1 --reg 5 --cr 10 --gpu 0
+# sun
+python train.py --dataset SUN --syn_num 2000 --attSize 102 --nz 3 --nclass_all 717 --nclass_seen 645 --gpu 3 --use_classify True --lr 0.001 --cr 10 --batch_size 2048 --cls_epoch 30 --begin_step 150 --reg 10 --nepoch 500  --cls_weight 0.2 --test_epoch 1
